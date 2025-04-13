@@ -1,0 +1,17 @@
+---
+import Github from '@/components/icons/github';
+import { Welcome } from '../components/welcome';
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import logo from '@/assets/logo.png';
+---
+
+<Layout>
+  <main class='flex flex-col items-center justify-center h-screen'>
+    <Image src={logo} alt='Lunna image' class='w-32 h-32 mb-4' />
+    <Welcome client:visible />
+    <a href='https://github.com/Lunna5' target='_blank'>
+      <Github className='text-white hover:text-foreground transition-colors size-8' />
+    </a>
+  </main>
+</Layout>

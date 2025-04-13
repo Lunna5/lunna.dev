@@ -1,0 +1,31 @@
+---
+import '@fontsource-variable/geist-mono/wght.css';
+---
+
+<!doctype html>
+<html lang='en' class='dark bg-background'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
+    <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
+    <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
+    <link rel='manifest' href='/site.webmanifest' />
+    <meta name='generator' content={Astro.generator} />
+    <title>Lunna.dev 🌙</title>
+  </head>
+  <body class=''>
+    <slot />
+  </body>
+</html>
+
+<style>
+  @import '@/styles/global.css';
+
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>

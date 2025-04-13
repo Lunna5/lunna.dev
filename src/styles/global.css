@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-text-main: var(--text-main);
+  --color-text-sub: var(--text-sub);
+
+  /* Fonts */
+  --font-geist-mono: 'Geist Mono Variable', sans-serif;
+}
+
+:root {
+  --background: #212121;
+  --foreground: #ca9ee6;
+  --text-main: #c6d0f5;
+  --text-sub: #b5bfe2;
+}
